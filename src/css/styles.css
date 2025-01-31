@@ -1,18 +1,144 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+.gallery {
+  margin: 24px 156px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+
+}
+
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+
+}
+
+.modal{
+  transform: scale(.8);
+}
+
+.feedback-form {
+
+
+width: 360px;
+height: 192px;
+
+}
+
+.feedback-form input {
+margin-top: 8px;
+margin-bottom: 8px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+
+letter-spacing: 0.04em;
+
+color: #2E2F42;
+width: 346px;
+height: 40px;
+
+
+
+border: 1px solid #808080;
+border-radius: 4px;
+
+padding-left: 16px;
+
+}
+
+.feedback-form textarea {
+margin-top: 8px;
+
+width: 360px;
+height: 112px;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+letter-spacing: 0.04em;
+
+color: #2E2F42;
+border: 1px solid #808080;
+border-radius: 4px;
+
+
+
+}
+
+.feedback-form input:hover {
+
+border: 1px solid #000000;
+border-radius: 4px;
+
+}
+
+.feedback-form input:focus::placeholder {
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.04em;
+visibility: visible;
+color: #2E2F42;
+
+}
+
+.feedback-form input::placeholder {
+  visibility: hidden;
+}
+
+.feedback-form button {
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 16px;
+gap: 10px;
+margin-top: 16px;
+width: 95px;
+height: 40px;
+
+background: #4E75FF;
+border-radius: 8px;
+
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.feedback-form button:hover {
+background: #6C8CFF;
+border-radius: 8px;
+
+}
